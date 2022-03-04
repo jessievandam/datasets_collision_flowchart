@@ -1,0 +1,36 @@
+Controller: whole-body PID
+Unmodeled load: 0.58 kg, mounted end of forearm
+
+1) halfway forearm, from the side
+
+2) halfway forearm, from the side
+
+3) halfway forearm, from the side
+
+4) halfway upperarm, from the side
+
+5) halfway upperarm, from the side
+
+6) halfway upperarm, from the side
+
+### ARM MOVING FORWARD, FOREARM DOWN A LITTLE BIT ###
+
+7) halfway forearm, from the side
+
+8) halfway forearm, from the side
+
+9) halfway forearm, from the side
+
+10) halfway forearm, from the top
+
+11) halfway forearm, from the top
+
+12) halfway forearm, from the top
+
+### ARM MOVING BACK ###
+
+13) halfway forearm, from the side
+
+### ARM MOVING FORWARD ###
+
+14) halfway forearm, from the side
