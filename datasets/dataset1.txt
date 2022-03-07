@@ -1,0 +1,25 @@
+Controller: whole-body MPC, end-effector mode
+
+1) halfway forearm, from the side
+
+2) forearm, bit towards elbow, from the side
+
+3) forearm, bit towards elbow, from the side
+
+4) forearm, bit towards elbow, from the side
+
+5) wrist 1, from the side
+
+6) halfway upperarm, from the side
+
+7) halfway upperarm, from the side
+
+8) halfway upperarm, from the side
+
+9) halfway upperarm, from the side
+
+10) halfway forearm, from the top
+
+11) halfway forearm, from the top
+
+12) halfway forearm, from the side/top

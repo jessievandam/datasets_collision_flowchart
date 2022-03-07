@@ -1,0 +1,23 @@
+Controller: whole-body MPC, end-effector mode
+
+1) halfway base, from the side
+
+2) halfway base, from the side
+
+3) halfway base, from the side
+
+4) from the side of the base but more to the front, from the side
+
+5) from the side of the base but more to the front, from the side
+
+6) from the side of the base but more to the front, from the side
+
+7) from the top of the base towards the back, from the top
+
+8) from the top of the base towards the back, from the top
+
+9) at the back of the base, from the back
+
+10) at the back of the base, from the back
+
+11) at the back of the base, from the back

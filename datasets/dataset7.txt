@@ -1,0 +1,30 @@
+Controller: whole-body MPC, end-effector mode
+
+### ARM MOVING BACK ###
+
+1) halfway forearm, from the side
+
+2) halfway forearm, from the side
+
+### ARM MOVING FORWARD ###
+
+3) halfway forearm, from the side
+
+### ARM MOVING BACK ###
+
+4) halfway upperarm, from the side
+
+5) halfway upperarm, from the side
+
+### ARM MOVING FORWARD ###
+
+6) halfway forearm, from the top
+
+### ARM MOVING BACK ###
+
+7) halfway forearm, from the top
+
+### ARM MOVING FORWARD ###
+### ARM MOVING BACK ###
+
+8) on rotational arm joint 4, from the back
