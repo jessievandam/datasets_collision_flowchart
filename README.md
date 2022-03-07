@@ -3,7 +3,7 @@ The table containing the information and numbering of the rosbags, is found belo
 
 | **Parameter**          	| **Description**                                                                                                          	| **Unit** 	| **Size** 	| **Matlab name**          	|
 |------------------------	|--------------------------------------------------------------------------------------------------------------------------	|----------	|----------	|--------------------------	|
-| $q$                    	| Generalized coordinates                                                                                                  	| rad      	| 24x1     	| `q`                      	|
+| $`q`$                    	| Generalized coordinates                                                                                                  	| rad      	| 24x1     	| `q`                      	|
 | $\dot{q}$              	| Generalized velocities                                                                                                   	| rad/s    	| 24x1     	| `qd`                     	|
 | $\dot{q}_{\text{des}}$ 	| Desired joint velocities                                                                                                 	| rad/s    	| 18x1     	| `qd_des`                 	|
 | $\tau_{\text{m}}$      	| Measured motor torques                                                                                                   	| Nm       	| 18x1     	| `taum`                   	|
