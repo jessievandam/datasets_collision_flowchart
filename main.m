@@ -83,7 +83,7 @@ hold on
 plot(time, magFTForce, 'k--', 'LineWidth', LW)
 hold off
 grid on
-ylabel('Magnitude force [N]','Interpreter','latex','Fontsize', FS)
+ylabel('Force magnitude [N]','Interpreter','latex','Fontsize', FS)
 xlabel('Time [sec]','Interpreter','latex','Fontsize', FS)
 leg = legend('Estimated force','Collision?', 'Ground truth');
 set(leg, 'Location', 'northeast',  'Interpreter', 'latex','Fontsize', FS);
