@@ -13,7 +13,7 @@ Unmodeled load: 0.58 kg, mounted end of forearm
 
 6) halfway upperarm, from the side
 
-### ARM MOVING FORWARD, FOREARM DOWN A LITTLE BIT ###
+### ARM MOVING FORWARD ###
 
 7) halfway forearm, from the side
 
