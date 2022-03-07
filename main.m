@@ -1,4 +1,11 @@
-load('armCtrlJoint_push_load');
+%% initialization
+
+% add folders to path
+addpath('function_files')
+addpath('datasets')
+
+% load dataset
+load('dataset9');
 
 %% parameters time
 endInd = size(time,2);    % end index
@@ -8,6 +15,7 @@ timeVec = linspace(0, time(end), endInd); % linearly spaced time vector
 %% estimate external torques
 % torques calculated with continuous-time momentum-based observer
 
+% estimate torques
 torques = momentum_observer(taum, nonlinearTerms, massMatrix, qd, Ts, endInd);
 
 %% estimate external force
@@ -16,7 +24,7 @@ torques = momentum_observer(taum, nonlinearTerms, massMatrix, qd, Ts, endInd);
 % cut-off frequency LPF force, to be applied during trotting
 fc = 1.0; % [Hz] 
  
-[force, forceLPF, stackedJacobian] = estimate_force_base_arm(torques, jacobiansCollidingLinks,...
+[force, forceLPF] = estimate_force_base_arm(torques, jacobiansCollidingLinks,...
                             jacobiansFeet, timeVec, endInd, fc);
                         
 %% detect collision     
@@ -51,7 +59,7 @@ forceEstimated = force;
 
 [forceCollision, magEstForceCollision, disturbance] = collision_identification(collision,...
                 forceEstimated, endInd, Ts, fc);
-          
+
 %% plot identified vs ground truth collision force
 
 % figure parameters
@@ -75,9 +83,8 @@ hold on
 plot(time, magFTForce, 'k--', 'LineWidth', LW)
 hold off
 grid on
-title('Magnitude force','Interpreter','latex','Fontsize', FS)
-ylabel('Force [N]','Interpreter','latex','Fontsize', FS)
+ylabel('Magnitude force [N]','Interpreter','latex','Fontsize', FS)
 xlabel('Time [sec]','Interpreter','latex','Fontsize', FS)
-leg = legend('Estimation collision','Collision?', 'Ground truth');
+leg = legend('Estimated force','Collision?', 'Ground truth');
 set(leg, 'Location', 'northeast',  'Interpreter', 'latex','Fontsize', FS);
 xlim([time(500) time(end)])   
