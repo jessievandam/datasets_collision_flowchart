@@ -23,9 +23,14 @@ torques = momentum_observer(taum, nonlinearTerms, massMatrix, qd, Ts, endInd);
 
 % cut-off frequency LPF force, to be applied during trotting
 fc = 1.0; % [Hz] 
- 
+                          
+% if not datasets 5, 8, 10, 11, 12, 13, 14 and 19
+% forceEE is empty, else, comment out next line
+forceEE = [];
+
+% estimate force
 [force, forceLPF] = estimate_force_base_arm(torques, jacobiansCollidingLinks,...
-                            jacobiansFeet, timeVec, endInd, fc);
+                            jacobiansFeet, timeVec, endInd, fc, forceEE);
                         
 %% detect collision     
 

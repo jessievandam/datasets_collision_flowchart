@@ -1,5 +1,5 @@
 function [force, forceLPF] = estimate_force_base_arm(torques,allJacobians,...
-                            jacobiansFeet, timeVec, endInd, fc)
+                            jacobiansFeet, timeVec, endInd, fc, forceEE)
 
 %   Estimation of forces acting on arm links and base
 %   This script only uses one arm Jacobian, but it can be adjusted for any Jacobian
@@ -40,6 +40,20 @@ function [force, forceLPF] = estimate_force_base_arm(torques,allJacobians,...
         forceLPF{1,h}(1,:) = lsim(sysLPF,force{1,h}(1,:),timeVec);
         forceLPF{1,h}(2,:) = lsim(sysLPF,force{1,h}(2,:),timeVec);
         forceLPF{1,h}(3,:) = lsim(sysLPF,force{1,h}(3,:),timeVec);
+    end  
+    
+    %% subtract measured EE FT sensor force
+
+    if ~isempty(forceEE)
+        fc2 = 4.0; % cut-off frequency LPF [Hz]
+        sysLPF2 = tf([0.0, fc2*2*pi], [1.0, fc2*2*pi]);
+        forceEElpf = zeros(3,endInd);
+        for i = 1:3
+            forceEElpf(i,:) = lsim(sysLPF2,forceEE(i,:),timeVec);
+        end
+        for i = 1:2
+            force{1,i} = force{1,i}-forceEElpf;
+        end
     end  
 
 end

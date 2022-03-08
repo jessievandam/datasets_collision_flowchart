@@ -13,9 +13,10 @@ The table containing the information and numbering of the rosbags, is found belo
 | $J_{\text{f}}$         	| Stacked translational feet Jacobians                                                                                     	| -        	| 12x24    	| `jacobiansFeet`          	|
 | $J_{i}$                	| Spatial colliding link Jacobians<br>(order of Jacobians in cell: upperarm, <br>forearm, wrist 1, wrist 2, gripper, base) 	| -        	| 6x24     	| `jacobiansCollidingLink` 	|
 | $t$                    	| Time                                                                                                  	| sec      	| 1x1     	| `time`                      	|
+| $F_{\text{ft}}$                    	| Force measured by force/torque<br>(F/T) sensor end-effector                                                                                                  	| N      	| 3x1     	| `forceEE`                      	|
 
 A few additional notes on the datasets:
-- The calibrated measurements for the force/torque (F/T) sensor at the end-effector are only available in rosbags 5, 8, 10, 11, 12, 13, 14 and 19.
+- The calibrated measurements for the force/torque (F/T) sensor at the end-effector are only available in datasets 5, 8, 10, 11, 12, 13, 14 and 19.
 - The number of collisions in the table sum up to 425, while in the paper we refer to 416 experiments. Dataset 14, containing 9 collisions with the human arm, and dataset 6, where the last 3 collisions are also with a human arm, are not considered in the paper. No ground truth F/T sensor collision force is availble for these datasets, but the data can be used to test collision detection methods.   
 
 ![Table](table.jpg)
