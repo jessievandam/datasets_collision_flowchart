@@ -1,5 +1,5 @@
 %% choose dataset number
-datasetNr = 5;
+datasetNr = 17;
 
 %% initialization
 
@@ -13,7 +13,7 @@ load('dataset'+string(datasetNr));
 %% parameters time
 
 endInd = size(time,2);    % end index
-Ts = time(end)/(endInd);  % sampling time
+Ts = time(end)/(endInd);  % sampling time [sec]
 timeVec = linspace(0, time(end), endInd); % linearly spaced time vector
 
 %% estimate external torques
@@ -29,8 +29,8 @@ torques = momentum_observer(taum, nonlinearTerms, massMatrix, qd, Ts, endInd);
 fc = 1.0; % [Hz] 
                           
 % for the datasets for which forceEE is not recorded: set forcEE to empty
-if datasetNr ~= 5 || datasetNr ~= 8 || datasetNr ~= 10 || datasetNr ~= 11 || ...
-    datasetNr ~= 12 || datasetNr ~= 13 || datasetNr ~= 14 || datasetNr ~= 19
+if datasetNr ~= 5 && datasetNr ~= 8 && datasetNr ~= 10 && datasetNr ~= 11 && ...
+    datasetNr ~= 12 && datasetNr ~= 13 && datasetNr ~= 14 && datasetNr ~= 19
     forceEE = [];
 end
 
@@ -41,10 +41,29 @@ end
 %% detect collision     
 
 % parameters collision detection flowchart
-T_twopeaks = 3.5;      % if the second peak doesn't appear after T_twopeaks sec, the ending of the collision is detected
-T_rippling = 0.4;      % if all force components are below the threshold for T_rippling sec after the collision has ended,
-                       % the collision has officially disappeared
-
+% T_twopeaks: if the second peak doesn't appear after T_twopeaks sec, the ending of the collision is detected
+% T_rippling: if all force components are below the threshold for T_rippling sec after the collision has ended,
+%             the collision has officially disappeared
+if datasetNr == 5
+    T_twopeaks = 3.5;  % [sec]       
+    T_rippling = 0.5;  % [sec] 
+elseif datasetNr == 8 || datasetNr == 9 || datasetNr == 11 || datasetNr == 16 ||...
+        datasetNr == 18
+    T_twopeaks = 2.1;  % [sec]  
+    T_rippling = 0.6;  % [sec] 
+else
+    T_twopeaks = 3.2;  % [sec] 
+    T_rippling = 0.6;  % [sec] 
+end    
+                       
+% start index to start detecting collision, taking into account convergence
+% time of the estimated external torques                  
+if datasetNr == 5 || datasetNr == 15 || datasetNr == 17
+    startInd = 1200;
+else
+    startInd = 800;
+end                 
+                       
 % cut-off frequencies of band-pass filter
 if datasetNr == 18
     % cut-off frequencies during trotting
@@ -63,7 +82,7 @@ if datasetNr == 18
 elseif datasetNr == 6 || datasetNr == 7 || datasetNr == 14 || datasetNr == 15 || ...
     datasetNr == 17 || datasetNr == 19 
     % constant threshold during arm motion   
-    constThresh = [4; 3; 6.5]; 
+    constThresh = [4; 3; 6.5];  % [N]
 else
     % constant threshold during stance
     constThresh = [1.8; 1.8; 1.8]; % [N]
@@ -71,7 +90,7 @@ end
 
 % detect collision
 [collision] = collision_detection(force, timeVec, endInd, Ts, T_twopeaks,...
-                   T_rippling, cutOffFreqMin, cutOffFreqMax, constThresh);
+                   T_rippling, cutOffFreqMin, cutOffFreqMax, constThresh, startInd);
                    
 %% estimate disturbances and identify collision force
 

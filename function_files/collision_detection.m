@@ -1,5 +1,5 @@
 function [collision] = collision_detection(force, timeVec, endInd, Ts, T_twopeaks,...
-                       T_rippling, cutOffFreqMin, cutOffFreqMax, constThresh)
+                       T_rippling, cutOffFreqMin, cutOffFreqMax, constThresh, startInd)
 
 %   Collision detection with BPF and constant threshold
     
@@ -28,9 +28,7 @@ function [collision] = collision_detection(force, timeVec, endInd, Ts, T_twopeak
           phaseCollision = 0;
           count = 0;
 
-          % do not start at the beginning, taking into account convergence
-          % time of the momentum-observer based external torques
-          for i = 1200:endInd
+          for i = startInd:endInd
 
               % PHASE 0: no collision 
               if phaseCollision == 0
