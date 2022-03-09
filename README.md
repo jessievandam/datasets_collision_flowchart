@@ -1,19 +1,19 @@
 ## Datasets description
 The table containing the information and numbering of the rosbags, is found below. All datasets are found in the folder `/datasets` and the numbering is equal to the numbering in the table. For each dataset, there is one .mat file and one .txt file. The .txt file contains a description of the contact location and direction of the applied collisions. The .mat file contains the following terms, required as an input for the steps of the collision event pipeline (note that the size is the size of the vector/matrix/double at one time instant):
 
-| **Parameter**          	| **Description**                                                                                                          	| **Unit** 	| **Size** 	| **Matlab name**          	|
-|------------------------	|--------------------------------------------------------------------------------------------------------------------------	|----------	|----------	|--------------------------	|
-| $q$                    	| Generalized coordinates                                                                                                  	| rad      	| 24x1     	| `q`                      	|
-| $\dot{q}$              	| Generalized velocities                                                                                                   	| rad/s    	| 24x1     	| `qd`                     	|
-| $\dot{q}_{\text{des}}$ 	| Desired joint velocities                                                                                                 	| rad/s    	| 18x1     	| `qd_des`                 	|
-| $\tau_{\text{m}}$      	| Measured motor torques                                                                                                   	| Nm       	| 18x1     	| `taum`                   	|
-| $M$                    	| Inertia matrix                                                                                                           	| kg m^2   	| 24x24    	| `massMatrix`             	|
-| $n$                    	| Nonlinear terms                                                                                                          	| Nm       	| 24x1     	| `nonlinearTerms`         	|
-| $\|F\|$                	| Magnitude ground truth collision force                                                                                   	| N        	| 1x1      	| `magFTforce`             	|
-| $J_{\text{f}}$         	| Stacked translational feet Jacobians                                                                                     	| -        	| 12x24    	| `jacobiansFeet`          	|
-| $J_{i}$                	| Spatial colliding link Jacobians<br>(order of Jacobians in cell: upperarm, <br>forearm, wrist 1, wrist 2, gripper, base) 	| -        	| 6x24     	| `jacobiansCollidingLink` 	|
-| $t$                    	| Time                                                                                                  	| sec      	| 1x1     	| `time`                      	|
-| $F_{\text{ft}}$                    	| Force measured by force/torque<br>(F/T) sensor end-effector                                                                                                  	| N      	| 3x1     	| `forceEE`                      	|
+| **Description**                                                                                                          	| **Unit** 	| **Size** 	| **Matlab name**          	|
+|--------------------------------------------------------------------------------------------------------------------------	|----------	|----------	|--------------------------	|
+| Generalized coordinates                                                                                                  	| rad      	| 24x1     	| `q`                      	|
+| Generalized velocities                                                                                                   	| rad/s    	| 24x1     	| `qd`                     	|
+| Desired joint velocities                                                                                                 	| rad/s    	| 18x1     	| `qd_des`                 	|
+| Measured motor torques                                                                                                   	| Nm       	| 18x1     	| `taum`                   	|
+| Inertia matrix                                                                                                           	| kg m^2   	| 24x24    	| `massMatrix`             	|
+| Nonlinear terms                                                                                                          	| Nm       	| 24x1     	| `nonlinearTerms`         	|
+| Magnitude ground truth collision force                                                                                   	| N        	| 1x1      	| `magFTforce`             	|
+| Stacked translational feet Jacobians                                                                                     	| -        	| 12x24    	| `jacobiansFeet`          	|
+| Spatial colliding link Jacobians<br>(order of Jacobians in cell: upperarm, <br>forearm, wrist 1, wrist 2, gripper, base) 	| -        	| 6x24     	| `jacobiansCollidingLink` 	|
+| Time                                                                                                  	| sec      	| 1x1     	| `time`                      	|
+| Force measured by force/torque<br>(F/T) sensor end-effector                                                                                                  	| N      	| 3x1     	| `forceEE`                      	|
 
 A few additional notes on the datasets:
 - The calibrated measurements for the force/torque (F/T) sensor at the end-effector are only available in datasets 5, 8, 10, 11, 12, 13, 14 and 19.
@@ -25,25 +25,25 @@ A few additional notes on the datasets:
 
 ## Code description
 The parameters used in the code are the following (note that the size is the size of the vector/matrix/double at one time instant):
-| **Parameter**              	| **Description**                                                                                                                                                   	| **Unit** 	| **Size** 	| **Matlab name**        	|
-|----------------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------	|----------	|----------	|------------------------	|
-| $N$                        	| End index of time vector                                                                                                                                          	| -        	| 1x1      	| `endInd`               	|
-| $T_{\text{s}}$             	| Sampling time                                                                                                                                                     	| sec      	| 1x1      	| `Ts`                   	|
-| $t$                        	| Linearly spaced time vector                                                                                                                                       	| sec      	| 1x1      	| `timeVec`              	|
-| $\hat{\tau}_{\text{ext}}$  	| Estimated external torques                                                                                                                                        	| Nm       	| 24x1     	| `torques`              	|
-| $\hat{F}_{\text{ext}}$     	| Estimated external force                                                                                                                                          	| N        	| 3x1      	| `force`                	|
-| $\hat{F}_{\text{ext,lpf}}$ 	| Estimated external force with added <br>low-pass filter (LPF)                                                                                                      	| N        	| 3x1      	| `forceLPF`             	|
-| f_{\T{c}}                  	| Cut-off frequency LPF                                                                                                                                             	| Hz       	| 1x1      	| `fc`                   	|
-| $T_\text{2peaks}$          	| If the second peak doesn't appear after <br>$T_\text{2peaks}$ sec, the ending of the collision <br>is detected                                                    	| sec      	| 1x1      	| `T_twopeaks`           	|
-| $T_{\text{rippling}}$      	| If all force components are below the <br>threshold for $T_{\text{rippling}}$ sec after the <br> collision has ended, the collision has <br>officially disappeared 	| sec      	| 1x1      	| `T_rippling`           	|
-| $\omega_{\text{min}}$      	| Minimum cut-off frequency band-pass<br>filter (BPF)                                                                                                               	| Hz       	| 1x1      	| `cutOffFreqMin`        	|
-| $\omega_{\text{max}}$      	| Maximum cut-off frequency BPF                                                                                                                                     	| Hz       	| 1x1      	| `cutOffFreqMax`        	|
-| $b$                        	| Constant threshold for $x, y$ and $z$<br>components of filtered force                                                                                             	| N        	| 3x1      	| `constThresh`          	|
-| $\epsilon$                 	| Collision bool                                                                                                                                                    	| -        	| 1x1      	| `collision`            	|
-| $\hat{F}_{\text{ext}}$     	| Estimated collision force including <br>disturbances                                                                                                              	| N        	| 3x1      	| `forceEstimated`       	|
-| $\hat{F}_{\text{c}}$       	| Estimated collision force excluding<br>disturbances                                                                                                               	| N        	| 3x1      	| `forceCollision`       	|
-| $\|\hat{F}_{\text{c}}\|$   	| Magnitude estimated collision force<br>excluding disturbances                                                                                                     	| N        	| 3x1      	| `magEstForceCollision` 	|
-| $\hat{F}_{\text{dis}}$     	| Estimated disturbance force                                                                                                                                       	| N        	| 3x1      	| `disturbance`          	|
+| **Description**                                                                                                                                                   	| **Unit** 	| **Size** 	| **Matlab name**        	|
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------	|----------	|----------	|------------------------	|
+| End index of time vector                                                                                                                                          	| -        	| 1x1      	| `endInd`               	|
+| Sampling time                                                                                                                                                     	| sec      	| 1x1      	| `Ts`                   	|
+| Linearly spaced time vector                                                                                                                                       	| sec      	| 1x1      	| `timeVec`              	|
+| Estimated external torques                                                                                                                                        	| Nm       	| 24x1     	| `torques`              	|
+| Estimated external force                                                                                                                                          	| N        	| 3x1      	| `force`                	|
+| Estimated external force with added <br>low-pass filter (LPF)                                                                                                      	| N        	| 3x1      	| `forceLPF`             	|
+| Cut-off frequency LPF                                                                                                                                             	| Hz       	| 1x1      	| `fc`                   	|
+| If the second peak doesn't appear after <br>$T_\text{2peaks}$ sec, the ending of the collision <br>is detected                                                    	| sec      	| 1x1      	| `T_twopeaks`           	|
+| If all force components are below the <br>threshold for $T_{\text{rippling}}$ sec after the <br> collision has ended, the collision has <br>officially disappeared 	| sec      	| 1x1      	| `T_rippling`           	|
+| Minimum cut-off frequency band-pass<br>filter (BPF)                                                                                                               	| Hz       	| 1x1      	| `cutOffFreqMin`        	|
+| Maximum cut-off frequency BPF                                                                                                                                     	| Hz       	| 1x1      	| `cutOffFreqMax`        	|
+| Constant threshold for $x, y$ and $z$<br>components of filtered force                                                                                             	| N        	| 3x1      	| `constThresh`          	|
+| Collision bool                                                                                                                                                    	| -        	| 1x1      	| `collision`            	|
+| Estimated collision force including <br>disturbances                                                                                                              	| N        	| 3x1      	| `forceEstimated`       	|
+| Estimated collision force excluding<br>disturbances                                                                                                               	| N        	| 3x1      	| `forceCollision`       	|
+| Magnitude estimated collision force<br>excluding disturbances                                                                                                     	| N        	| 3x1      	| `magEstForceCollision` 	|
+| Estimated disturbance force                                                                                                                                       	| N        	| 3x1      	| `disturbance`          	|
 
 The steps of the collision pipeline, followed in the sample code found in `main.m` are the following:
 1. **External torque estimation.** In the file `momentum_observer.m`, the continuous-time momentum-based observer for floating-base robots is implemented, resulting in the estimated torques.
