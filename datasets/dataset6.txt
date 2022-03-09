@@ -1,0 +1,48 @@
+Controller: whole-body PID
+
+### ARM MOVING FORWARD ###
+
+1) halfway upperarm, from the side
+
+### ARM MOVING MORE FORWARD. THEN BACKWARDS AGAIN ###
+
+2) halfway forearm, from the side
+
+3) halfway forearm, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+4) wrist1, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+5) halfway upperarm, from the side
+
+### ROTATION AROUND SHOULDER, ARM MOVING FORWARDS ###
+
+6) halfway upperarm, from the side
+
+### ARM MOVING BACKWARDS ###
+
+7) halfway forearm, from the side
+
+### ARM MOVING FORWARDS ###
+
+8) halfway forearm, from the side
+
+### ARM MOVING BACKWARDS, FOREARM MOVING UP ###
+
+9) halfway forearm, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+10) wrist1, from the side, collision with human arm instead of F/T ground truth sensor
+
+### ROTATION AROUND SHOULDER, ARM MOVING BACKWARDS ###
+
+11) halfway upperarm, from the back, collision with human arm instead of F/T ground truth sensor
+
+### ROTATION AROUND SHOULDER, ARM MOVING FORWARDS, AMR MOVING BACKWARDS, ARM MOVING BACKWARDS ###
+
+12) elbow, from the back, collision with human arm instead of F/T ground truth sensor
+

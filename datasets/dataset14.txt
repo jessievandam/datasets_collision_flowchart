@@ -1,0 +1,26 @@
+Controller: whole-body PID
+Colisions with a human arm instead of a ground truth F/T sensor
+
+### ROTATION AROUND SHOULDER ###
+
+1) wrist 2, from the side
+
+### UPPERARM MOVING BACKWARDS, ROTATION AROUND SHOULDER ###
+
+2) wrist 2, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+3) halfway forearm, from the side
+
+### ARM MOVING BACKWARDS ###
+
+4) halfway upperarm, from the back
+
+### ROTATION AROUND SHOULDER ###
+
+5) elbow, from the side
+
+### ROTATION AROUND SHOULDER, ARM MOVING FORWARDS ###
+
+6) halfway upperarm, from the back

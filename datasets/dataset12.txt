@@ -1,0 +1,36 @@
+Controller: whole-body PID
+Unmodeled load: 0.58 kg, placed at the back of the base, on the lidar
+
+1) halfway upperarm, from the side
+
+2) halfway upperarm, from the side
+
+3) halfway upperarm, from the side
+
+4) forearm close to elbow, from the side
+
+5) forearm close to elbow, from the side
+
+6) forearm close to elbow, from the side
+
+7) forearm close to wrist1, from the top
+
+8) forearm close to wrist1, from the top
+
+### ARM MOVING FORWARDS ###
+
+9) halfway upperarm, from the side
+
+10) halfway upperarm, from the side
+
+11) halfway upperarm, from the side
+
+12) halfway upperarm, from the side
+
+13) halfway upperarm, from the side
+
+14) wrist 1, from the side
+
+15) wrist 1, from the side
+
+16) wrist 1, from the side

@@ -1,0 +1,26 @@
+Controller: whole-body PID
+Measured load: 0.58 kg, fixed in the gripper
+(note: F/T sensor end-effector forces incorrectly recorded)
+
+### WHILE UPPERARM MOVING FORWARDS ###
+
+1) halfway upperarm, from the side
+
+### UPPERARM MOVING BACKWARDS ###
+
+2) halfway forearm, from the side
+
+3) halfway forearm, from the side
+
+4) halfway forearm, from the side
+
+5) halfway forearm, from the side
+
+6) halfway upperarm, from the side
+
+7) halfway forearm, from the side
+
+8) halfway forearm, from the side
+
+9) halfway forearm, from the side
+

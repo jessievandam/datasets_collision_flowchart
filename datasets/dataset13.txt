@@ -1,0 +1,51 @@
+Controller: whole-body PID
+Unmodeled load: 2.0 kg, placed at the back of the base, on the lidar
+
+1) halfway upperarm, from the side
+
+2) halfway upperarm, from the side
+
+3) halfway upperarm, from the side
+
+4) halfway upperarm, from the side
+
+5) halfway upperarm, from the side
+
+6) forearm close to elbow, from the side
+
+7) forearm close to elbow, from the side
+
+8) forearm close to elbow, from the side
+
+9) forearm close to elbow, from the side
+
+10) halfway upperarm, from the back
+
+11) halfway upperarm, from the back
+
+12) halfway upperarm, from the back
+
+### UPPERARM MOVING BACKWARDS ###
+
+13) halfway upperarm, from the side
+
+14) halfway upperarm, from the side
+
+15) halfway upperarm, from the side
+
+16) forearm close to elbow, from the side
+(note: does not show in ground truth F/T sensor measurements due to error in recordings)
+
+17) forearm close to elbow, from the side
+
+18) forearm close to elbow, from the side
+
+19) forearm close to elbow, from the side
+
+20) wrist 2, from the side
+
+21) wrist 2, from the side
+
+22) wrist 2, from the side
+
+23) wrist 2, from the side

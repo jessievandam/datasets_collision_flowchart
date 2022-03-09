@@ -1,0 +1,46 @@
+Controller: whole-body PID
+
+1) halfway base (bit towards the back), from the side
+
+2) halfway base (bit towards the back), from the side
+
+3) halfway base (bit towards the back), from the side
+
+4) from the side of the base but more to the back, from the side
+
+5) from the side of the base but more to the back, from the side
+
+6) from the side of the base but more to the back, from the side
+
+7) at the back of the base, from the back
+
+8) at the back of the base, from the back
+
+9) at the back of the base, from the back
+
+10) at the back of the base, from the back
+
+11) at the front of the base, from the front
+
+12) at the front of the base, from the front
+
+13) at the front of the base, from the front
+
+14) at the front of the base, from the front
+
+15) from the top of the base towards the back, from the top
+
+16) from the top of the base towards the back, from the top
+
+17) from the top of the base towards the back, from the top
+
+18) from the top of the base towards the back on top of the lidar, from the top
+
+19) from the top of the base towards the back on top of the lidar, from the top
+
+20) from the top of the base towards the back on top of the lidar, from the top
+
+21) from the top of the base towards the back on top of the lidar, from the top
+
+22) from the top of the base towards the back on top of the lidar, from the top
+

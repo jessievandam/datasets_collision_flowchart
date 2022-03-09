@@ -1,0 +1,34 @@
+Controller: whole-body PID
+
+### UPPERARM MOVING FORWARDS, ARM MOVING BACKWARDS ###
+
+1) halfway base, from the side
+
+### FOREARM MOVING FORWARDS ###
+
+2) halfway base, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+3) from the top of the base at the front, from the top
+
+### ROTATING AROUND SHOULDER. UPPERARM MOVING BACK ###
+
+4) from the top of the base at the front, from the top
+
+### UPPERARM MOVING FORWARDS ###
+
+5) at the front of the base, from the front
+
+### UPPERARM MOVING BACKWARDS ###
+
+6) at the front of the base, from the front
+
+### UPPERARM MOVING FORWARDS, UPPERARM MOVING BACKWARD, UPPERARM MOVING FORWARDS ###
+
+7) at the front of the base (on top of metal extension instead of cap like collision 3&4), from the top
+
+### ROTATION AROUND SHOULDER ###
+
+8) at the front of the base (on top of metal extension instead of cap like collision 3&4), from the top
+

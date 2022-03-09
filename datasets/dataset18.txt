@@ -1,0 +1,28 @@
+Controller: whole-body MPC, base mode
+Robot is trotting
+
+### WHILE TROTTING ###
+
+1) halfway forearm, from the side
+
+2) halfway forearm, from the side
+
+3) halfway upperarm, from the side
+
+4) halfway upperarm, from the side
+
+5) halfway forearm, from the top
+
+6) halfway forearm, from the top
+
+7) halfway forearm, from the top
+
+8) wrist 1, from the top
+
+9) forearm close to wrist1, from the top
+
+10) forearm close to wrist1, from the top
+
+11) upperarm close to shoulder, from the top
+
+12) upperarm close to shoulder, from the top

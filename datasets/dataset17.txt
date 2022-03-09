@@ -1,0 +1,53 @@
+Controller: whole-body MPC, end-effector mode
+
+### UPPERARM MOVING BACKWARDS ###
+
+1) halfway base, from the side
+
+### UPPERARM MOVING FORWARDS ###
+
+2) halfway base, from the side
+
+### UPPERARM MOVING BACKWARDS ###
+
+3) halfway base, from the side
+
+### UPPERARM MOVING FORWARDS ###
+
+4) from the side of the base but more to the front, from the side
+
+### UPPERARM MOVING BACKWARDS ###
+
+5) from the side of the base but more to the front, from the side
+
+6) from the side of the base but more to the front, from the side
+
+7) at the front of the base, from the front
+
+8) at the front of the base, from the front
+
+9) at the front of the base, from the front
+
+### UPPERARM MOVING FORWARDS ###
+
+10) from the top of the base at the front, from the top
+
+### WHILE WRIST 1 IS MOVING ###
+
+11) from the top of the base at the front, from the top
+
+### UPPERARM MOVING BACKWARDS ###
+
+12) from the top of the base at the front, from the top
+
+### UPPERARM MOVING FORWARDS ###
+
+13) from the top of the base towards the back, from the top
+
+14) from the top of the base towards the back, from the top
+
+### UPPERARM MOVING BACKWARDS ###
+
+15) from the top of the base towards the back, from the top
+
+

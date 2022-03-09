@@ -1,0 +1,34 @@
+Controller: whole-body PID
+Measured load: 0.58 kg, hangin on a rope in the gripper
+
+### ROTATION AROUND SHOULDER ###
+
+1) halfway forearm, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+2) halfway forearm, from the side
+
+### ROTATION AROUND SHOULDER ###
+
+3) wrist2, from the side
+
+### ### ROTATION AROUND SHOULDER, UPPERARM MOVING BACKWARDS ###
+
+4) halfway upperarm, from the back
+
+### UPPERARM MOVING BACKWARDS, UPPERARM MOVING FORWARDS ###
+
+5) halfway upperarm, from the front
+
+### UPPERARM MOVING BACKWARDS ###
+
+6) halfway upperarm, from the side
+
+7) halfway upperarm, from the side
+
+### UPPERARM MOVING FORWARDS ###
+
+8) halfway forearm, from the side
+
+9) halfway forearm, from the side

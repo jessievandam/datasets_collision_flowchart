@@ -1,0 +1,170 @@
+Controller: whole-body PID
+Measured load: 0.58 kg, hanging on a rope in the gripper
+
+1) halfway upperarm, from the side
+
+2) halfway upperarm, from the side
+
+3) halfway upperarm, from the side
+
+4) halfway upperarm, from the side
+
+5) halfway upperarm, from the side
+
+6) forearm close to elbow, from the side
+
+7) forearm close to elbow, from the side
+
+8) forearm close to elbow, from the side
+
+9) forearm close to elbow, from the side
+
+10) forearm close to wrist1, from the top
+
+11) forearm close to wrist1, from the top
+
+12) forearm close to wrist1, from the top
+
+13) forearm close to wrist1, from the top
+
+###  UPPEARM MOVING A BIT FORWARDS, ROTATION AROUND SHOULDER ###
+
+14) halfway upperarm, from the side
+
+15) halfway upperarm, from the side
+
+16) halfway upperarm, from the side
+
+17) halfway upperarm, from the side
+
+18) halfway forearm, from the side
+
+19) halfway forearm, from the side
+
+20) halfway forearm, from the side
+
+21) halfway forearm, from the side
+
+22) wrist2, from the side
+
+23) wrist2, from the side
+
+24) wrist2, from the side
+
+25) wrist2, from the side
+
+26) halfway forearm, from the side
+
+27) halfway forearm, from the side
+
+28) halfway forearm, from the side
+
+### ROTATING AROUND SHOULDER ###
+
+29) halfway forearm, from the side
+
+30) halfway forearm, from the side
+
+31) halfway forearm, from the side
+
+32) halfway forearm, from the side
+
+33) halfway forearm, from the side
+
+34) halfway upperarm, from the side
+
+35) halfway upperarm, from the side
+
+36) halfway upperarm, from the side
+
+37) halfway upperarm, from the side
+
+38) halfway upperarm, from the back
+
+39) halfway upperarm, from the back
+
+40) halfway upperarm, from the back
+
+41) halfway upperarm, from the back
+
+42) forearm close to wrist1, from the top
+
+43) forearm close to wrist1, from the top
+
+44) forearm close to wrist1, from the top
+
+### ROTATING AROUND SHOULDER, ARM MOVING FORWARDS  ###
+
+45) halfway upperarm, from the side
+
+46) halfway upperarm, from the side
+
+47) halfway upperarm, from the side
+
+48) halfway upperarm, from the side
+
+49) halfway forearm, from the side
+
+50) halfway forearm, from the side
+
+51) halfway forearm, from the side
+
+52) halfway upperarm, from the back
+
+53) halfway upperarm, from the back
+
+54) halfway upperarm, from the back
+
+55) halfway upperarm, from the back
+
+### UPPERARM MOVING BACKWARDS ###
+
+56) upperarm close to elbow, from the side
+
+57) upperarm close to elbow, from the side
+
+58) upperarm close to elbow, from the side
+
+59) forearm close to wrist1, from the top
+
+60) forearm close to wrist1, from the top
+
+61) forearm close to wrist1, from the top
+
+62) forearm close to wrist1, from the top
+
+63) forearm close to wrist1, from the top
+
+64) halfway forearm, from the side
+
+65) halfway forearm, from the side
+
+66) halfway forearm, from the side
+
+67) halfway forearm, from the side
+
+68) halfway forearm, from the side
+
+### ARM MOVING BACKWARDS ###
+
+69) upperarm close to elbow, from the side
+
+70) upperarm close to elbow, from the side
+
+71) upperarm close to elbow, from the side
+
+72) forearm close to elbow, from the side
+
+73) forearm close to elbow, from the side
+
+74) forearm close to elbow, from the side
+
+75) forearm close to elbow, from the side
+
+76) forearm close to elbow, from the side
+
+77) wrist 1, from the side
+
+78) wrist 1, from the side
+
+79) wrist 1, from the side

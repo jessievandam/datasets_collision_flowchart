@@ -18,6 +18,7 @@ The table containing the information and numbering of the rosbags, is found belo
 A few additional notes on the datasets:
 - The calibrated measurements for the force/torque (F/T) sensor at the end-effector are only available in datasets 5, 8, 10, 11, 12, 13, 14 and 19.
 - The number of collisions in the table sum up to 425, while in the paper we refer to 416 experiments. Dataset 14, containing 9 collisions with the human arm, and dataset 6, where the last 3 collisions are also with a human arm, are not considered in the paper. No ground truth F/T sensor collision force is availble for these datasets, but the data can be used to test collision detection methods.   
+- The number of collisions for dataset 13 is 22 in the table, but 23 in the .txt file. One of the collisions is incorrectly recorded in the ground truth F/T sensor data. This collision is shown in the estimated force, but not in the ground truth force. 
 
 ![Table](table.jpg)
 

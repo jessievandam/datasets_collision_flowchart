@@ -1,0 +1,99 @@
+Controller: whole-body PID
+Measured load: 0.58 kg, hanging on a rope in the gripper
+
+1) upperarm close to elbow, from the side
+
+2) upperarm close to elbow, from the side
+
+3) upperarm close to elbow, from the side
+
+4) upperarm close to elbow, from the side
+
+5) upperarm close to elbow, from the side
+
+6) forearm close to elbow, from the side
+
+7) forearm close to elbow, from the side
+
+8) forearm close to elbow, from the side
+
+9) forearm close to elbow, from the side
+
+10) forearm close to elbow, from the side
+
+11) forearm close to wrist1, from the top
+
+12) forearm close to wrist1, from the top
+
+13) forearm close to wrist1, from the top
+
+14) wrist2, from the side
+
+15) wrist2, from the side
+
+16) wrist2, from the side
+
+17) wrist2, from the side
+
+### ARM MOVING FORWARDS ###
+
+18) halfway upperarm, from the side
+
+19) halfway upperarm, from the side
+
+20) halfway upperarm, from the side
+
+21) halfway upperarm, from the side
+
+22) halfway upperarm, from the side
+
+23) halfway upperarm, from the back
+
+24) halfway upperarm, from the back
+
+25) halfway upperarm, from the back
+
+26) halfway upperarm, from the back
+
+27) halfway upperarm, from the back
+
+28) forearm close to elbow, from the side
+
+29) forearm close to elbow, from the side
+
+30) forearm close to elbow, from the side
+
+31) forearm close to elbow, from the side
+
+### ROTATION AROUND SHOULDER, ARM MOVING FORWARDS ###
+
+32) halfway upperarm, from the side
+
+33) halfway upperarm, from the side
+
+34) halfway upperarm, from the side
+
+35) halfway upperarm, from the side
+
+36) halfway upperarm, from the side
+
+37) forearm close to elbow, from the side
+
+38) forearm close to elbow, from the side
+
+39) forearm close to elbow, from the side
+
+40) forearm close to elbow, from the side
+
+41) forearm close to elbow, from the side
+
+42) halfway upperarm, from the back
+
+43) halfway upperarm, from the back
+
+44) halfway upperarm, from the back
+
+45) halfway upperarm, from the back
+
+46) halfway upperarm, from the back
+

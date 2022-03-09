@@ -1,0 +1,99 @@
+Controller: whole-body PID
+
+1) halfway forearm, from the side
+
+2) halfway forearm, from the side
+
+3) halfway forearm, from the side
+
+4) halfway forearm, from the side
+
+5) halfway forearm, from the side
+
+6) halfway upperarm, from the side
+
+7) halfway upperarm, from the side
+
+8) halfway upperarm, from the side
+
+### ARM MOVING FORWARDS ###
+
+9) halfway forearm, from the side
+
+10) halfway forearm, from the side
+
+11) halfway forearm, from the side
+
+12) halfway upperarm, from the side
+
+13) halfway upperarm, from the side
+
+14) halfway upperarm, from the side
+
+15) halfway forearm, from the top
+
+16) halfway forearm, from the top
+
+17) halfway forearm, from the top/side
+
+18) halfway forearm, from the top/side
+
+19) halfway forearm, from the top/side
+
+### UPPERARM MOVING FORWARDS, FOREARM MOVING DOWN ###
+
+20) halfway forearm, from the side
+
+21) halfway forearm, from the side
+
+22) halfway forearm, from the side
+
+23) halfway upperarm, from the side
+
+24) halfway upperarm, from the side
+
+25) halfway upperarm, from the side
+
+26) halfway forearm, from the top
+
+27) halfway forearm, from the top
+
+28) halfway forearm, from the top
+
+### FOREARM MOVING UP, ROTATION AROUND SHOULDER ###
+
+29) halfway forearm, from the side
+
+30) halfway forearm, from the side
+
+31) halfway forearm, from the side
+
+32) halfway forearm, from the side
+
+33) halfway forearm, from the side
+
+34) halfway upperarm, from the side
+
+35) halfway upperarm, from the side
+
+36) halfway upperarm, from the side
+
+### FOREARM MOVING DOWN ###
+
+37) halfway forearm, from the top/side
+
+38) halfway forearm, from the top/side
+
+39) halfway forearm, from the top/side
+
+40) halfway forearm, from the side
+
+41) halfway forearm, from the side
+
+42) halfway forearm, from the side
+
+43) halfway upperarm, from the side
+
+44) halfway upperarm, from the side
+
+45) halfway forearm, from the side
