@@ -30,7 +30,7 @@ function [collision] = collision_detection(force, timeVec, endInd, Ts, T_twopeak
 
           % do not start at the beginning, taking into account convergence
           % time of the momentum-observer based external torques
-          for i = 1000:endInd
+          for i = 1200:endInd
 
               % PHASE 0: no collision 
               if phaseCollision == 0
