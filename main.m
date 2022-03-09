@@ -1,3 +1,5 @@
+close all;
+clear all;
 %% choose dataset number
 datasetNr = 17;
 
