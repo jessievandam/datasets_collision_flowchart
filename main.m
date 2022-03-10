@@ -64,7 +64,7 @@ else
     cutOffFreqMax = 3.0;  % [Hz] LPF cut-off freq
 end
 
-% constant threshold
+% set constant threshold
 if datasetNr == 18
     % constant threshold during trotting
     constThresh = [15.8; 15.6; 7.9]; % [N]
@@ -88,10 +88,10 @@ fc = 0.5;
 
 % switch forceEstimated to forceLPF for trotting
 if datasetNr == 18
-    % during trotting
+    % trotting
     forceEstimated = forceLPF;
 else
-    % when not trotting
+    % stance
     forceEstimated = force;
 end
 
