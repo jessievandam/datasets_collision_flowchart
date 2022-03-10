@@ -2,7 +2,7 @@ close all;
 clear all;
 
 %% choose dataset number
-datasetNr = 17;
+datasetNr = 1;
 
 %% initialization
 
@@ -46,26 +46,12 @@ end
 % parameters collision detection flowchart
 % T_twopeaks: if the second peak doesn't appear after T_twopeaks sec, the ending of the collision is detected
 % T_rippling: if all force components are below the threshold for T_rippling sec after the collision has ended,
-%             the collision has officially disappeared
-if datasetNr == 5
-    T_twopeaks = 3.5;  % [sec]       
-    T_rippling = 0.5;  % [sec] 
-elseif datasetNr == 8 || datasetNr == 9 || datasetNr == 11 || datasetNr == 16 ||...
-        datasetNr == 18
-    T_twopeaks = 2.1;  % [sec]  
-    T_rippling = 0.6;  % [sec] 
-else
-    T_twopeaks = 3.2;  % [sec] 
-    T_rippling = 0.6;  % [sec] 
-end    
+%             the collision has disappeared
+T_twopeaks = 2.5;  % [sec] 
+T_rippling = 0.6;  % [sec] 
                        
-% start index to start detecting collision, taking into account convergence
-% time of the estimated external torques                  
-if datasetNr == 5 || datasetNr == 15 || datasetNr == 17
-    startInd = 1200;
-else
-    startInd = 800;
-end                 
+% start index to start detecting collision
+startInd = 1000;
                        
 % cut-off frequencies of band-pass filter
 if datasetNr == 18
