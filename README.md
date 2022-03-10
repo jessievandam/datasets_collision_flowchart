@@ -16,7 +16,6 @@ All datasets are located in the folder `/datasets`. The information related to e
 | Force measured by force/torque<br>(F/T) sensor at the end-effector                                                                                                  	| N      	| 3x1     	| `forceEE`                      	|
 
 A few additional notes on the datasets:
-- The calibrated measurements for the force/torque (F/T) sensor at the end-effector are only available in datasets 5, 8, 10, 11, 12, 13, 14 and 19.
 - The number of collisions in the table sum up to 425, while in the paper we refer to 416 experiments. No ground truth F/T sensor collision force is available for datasets 6 and 14, thus these datasets are not analyzed in the paper. Nevertheless, this data can still be used to test collision detection methods.  
 - The number of collisions for dataset 13 is 22 in the table, but 23 in the .txt file. One of the collisions is incorrectly recorded in the ground truth F/T sensor data. This collision is shown in the estimated force, but not in the ground truth force. 
 
