@@ -13,7 +13,7 @@ addpath('datasets')
 % load dataset
 load('dataset'+string(datasetNr));
 
-%% parameters time
+%% time-related parameters
 
 endInd = size(time,2);    % end index
 Ts = time(end)/(endInd);  % sampling time [sec]
